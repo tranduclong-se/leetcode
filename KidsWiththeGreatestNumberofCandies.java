@@ -1,6 +1,7 @@
 import java.util.*;
 
-class KidsWiththeGreatestNumberofCandies {
+public class KidsWiththeGreatestNumberofCandies {
+    static class Solution {
     public  List<Boolean> kidsWithCadies(int[] candies, int extraCadies){
         // Bước 1: Tìm giá trị lớn nhất trong mảng ban đầu
             int max=0;
@@ -13,5 +14,6 @@ class KidsWiththeGreatestNumberofCandies {
                 result.add(candy+extraCadies >= max);
             }
             return result;
+    }
     }
 }

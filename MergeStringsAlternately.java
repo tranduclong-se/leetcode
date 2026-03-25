@@ -1,4 +1,5 @@
-class MergeStringsAlternately {
+public class MergeStringsAlternately {
+    static class Solution {
     public String mergeAlternately(String word1, String word2) {
         StringBuilder result = new StringBuilder();
 
@@ -16,4 +17,5 @@ class MergeStringsAlternately {
         return result.toString();
     }
 
+    }
 }

@@ -1,4 +1,5 @@
-class GcdOfStringsSolution {
+public class gcdOfStrings {
+    static class Solution {
     public String gcdOfStrings(String str1, String str2) {
         if ((str1 + str2).equals(str2 + str1) == false)
             return "";
@@ -15,5 +16,6 @@ class GcdOfStringsSolution {
             a = temp;
         }
         return a;
+    }
     }
 }

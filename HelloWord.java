@@ -1,7 +1,8 @@
 import java.util.*;
 
 public class HelloWord {
-    public List<List<String>> groupAnagrams(String[] strs) {
+    static class Solution {
+        public List<List<String>> groupAnagrams(String[] strs) {
         // Kiểm tra trường hợp mảng rỗng
         if (strs == null || strs.length == 0) {
             return new ArrayList<>();
@@ -30,10 +31,11 @@ public class HelloWord {
 
         // Trả về danh sách các nhóm
         return new ArrayList<>(map.values());
+        }
     }
 
     public static void main(String[] args) {
-        HelloWord sol = new HelloWord();
+        Solution sol = new Solution();
         String[] input = { "eat", "tea", "tan", "ate", "nat", "bat" };
         System.out.println(sol.groupAnagrams(input));
     }

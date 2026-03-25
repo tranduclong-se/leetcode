@@ -1,4 +1,5 @@
-class ContainerWithMostWater {
+public class ContainerWithMostWater {
+    static class Solution {
     public int maxArea(int[] height) {
         int maxArea = 0;
         int left = 0;
@@ -23,5 +24,6 @@ class ContainerWithMostWater {
         }
 
         return maxArea;
+    }
     }
 }

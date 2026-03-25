@@ -5,7 +5,8 @@ Ngoặc mở phải đóng cùng loại, đúng thứ tự.
 */
 import java.util.Stack;
 
-class ValidParenthesesSolution {
+public class ValidParentheses {
+    static class Solution {
     public boolean isValid(String s){
         Stack<Character> stack = new Stack<>();
 
@@ -30,11 +31,9 @@ class ValidParenthesesSolution {
         //Nếu stack rỗng tức là mọi dấu ngoặc đều đã được ghép cặp.
         return stack.isEmpty();
     }
-}
-
-public class ValidParentheses {
+    }
     public static void main(String[] args) {
-        ValidParenthesesSolution sol = new ValidParenthesesSolution();
+        Solution sol = new Solution();
         String[] tests = {"()", "()[]{}", "(]", "([)]", "{[]}"};
         for (int i = 0; i < tests.length; i++) {
             System.out.println("Test " + (i + 1) + ": " + tests[i] + " -> " + sol.isValid(tests[i]));

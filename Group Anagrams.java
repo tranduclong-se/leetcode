@@ -1,7 +1,8 @@
 import java.util.*;
 
-class GroupAnagramsCopy {
-    public List<List<String>> groupAnagrams(String[] strs) {
+class Group_AnagramsMain {
+    static class Solution {
+        public List<List<String>> groupAnagrams(String[] strs) {
         // Kiểm tra trường hợp mảng rỗng
         if (strs == null || strs.length == 0) {
             return new ArrayList<>();
@@ -30,10 +31,11 @@ class GroupAnagramsCopy {
 
         // Trả về danh sách các nhóm
         return new ArrayList<>(map.values());
+        }
     }
 
     public static void main(String[] args) {
-        GroupAnagramsCopy sol = new GroupAnagramsCopy();
+        Solution sol = new Solution();
         String[] input = { "eat", "tea", "tan", "ate", "nat", "bat" };
         System.out.println(sol.groupAnagrams(input));
     }

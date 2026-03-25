@@ -1,6 +1,7 @@
 import java.util.*;
 
-class TopKFrequentElements {
+public class TopKFrequentElements {
+    static class Solution {
     public int[] topKFrequent(int[] nums, int k){
         // Bước 1: Đếm tần suất xuất hiện của mỗi số
         Map<Integer, Integer> countMap = new HashMap<>();
@@ -27,5 +28,6 @@ class TopKFrequentElements {
             result[i] = heap.poll();
         }
         return result;
+    }
     }
 }
