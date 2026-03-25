@@ -5,7 +5,7 @@ Ngoặc mở phải đóng cùng loại, đúng thứ tự.
 */
 import java.util.Stack;
 
-class Solution {
+class ValidParenthesesSolution {
     public boolean isValid(String s){
         Stack<Character> stack = new Stack<>();
 
@@ -34,7 +34,7 @@ class Solution {
 
 public class ValidParentheses {
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        ValidParenthesesSolution sol = new ValidParenthesesSolution();
         String[] tests = {"()", "()[]{}", "(]", "([)]", "{[]}"};
         for (int i = 0; i < tests.length; i++) {
             System.out.println("Test " + (i + 1) + ": " + tests[i] + " -> " + sol.isValid(tests[i]));

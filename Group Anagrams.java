@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+class GroupAnagramsCopy {
     public List<List<String>> groupAnagrams(String[] strs) {
         // Kiểm tra trường hợp mảng rỗng
         if (strs == null || strs.length == 0) {
@@ -33,7 +33,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        GroupAnagramsCopy sol = new GroupAnagramsCopy();
         String[] input = { "eat", "tea", "tan", "ate", "nat", "bat" };
         System.out.println(sol.groupAnagrams(input));
     }

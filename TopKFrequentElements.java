@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k){
         // Bước 1: Đếm tần suất xuất hiện của mỗi số
         Map<Integer, Integer> countMap = new HashMap<>();

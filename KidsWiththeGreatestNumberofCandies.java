@@ -1,7 +1,7 @@
 import java.util.*;
 
-class Solution {
-    public  List<Boolean> kidsWithCadies(int[] cadies, int extraCadies){
+class KidsWiththeGreatestNumberofCandies {
+    public  List<Boolean> kidsWithCadies(int[] candies, int extraCadies){
         // Bước 1: Tìm giá trị lớn nhất trong mảng ban đầu
             int max=0;
             for(int candy : candies) {

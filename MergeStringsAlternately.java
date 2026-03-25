@@ -1,6 +1,4 @@
-import java.util.*;
-
-class Solution {
+class MergeStringsAlternately {
     public String mergeAlternately(String word1, String word2) {
         StringBuilder result = new StringBuilder();
 

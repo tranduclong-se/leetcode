@@ -6,7 +6,7 @@ import java.util.Map;
     Chỉ có một đáp án duy nhất
     Không được sử dụng cùng một phần tử hai lần
 */
-class Solution {
+class TwoSumSolution {
     public int[] twoSum(int[] nums, int target) {
         // Map luu tru: Key = gia tri phan tu, Value = index cua phan tu do
         Map<Integer, Integer> map = new HashMap<>();
@@ -28,7 +28,7 @@ class Solution {
 
 public class TwoSum {
     public static void main(String[] args) {
-        LinkedListCycle solution = new LinkedListCycle();
+        TwoSumSolution solution = new TwoSumSolution();
 
         // Test case 1
         int[] nums1 = {2, 7, 11, 15};

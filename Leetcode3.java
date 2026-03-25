@@ -1,7 +1,7 @@
 //3. Longest Substring Without Repeating Characters
 import java.util.HashSet;
 
-class Solution {
+class Leetcode3Solution {
     public int lengthOfLongestSubstring(String s) {
         int left=0;
         int right=0;
@@ -26,7 +26,7 @@ class Solution {
 
 public class Leetcode3 {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Leetcode3Solution solution = new Leetcode3Solution();
         String s = "abcabcbb";
         System.out.println("Input: s = \"" + s + "\"");
         System.out.println("=".repeat(50));
