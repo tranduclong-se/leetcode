@@ -1,4 +1,4 @@
-public class ContainerWithMostWater {
+public class leetcode11 {
     static class Solution {
     public int maxArea(int[] height) {
         int maxArea = 0;
