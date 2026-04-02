@@ -1,4 +1,9 @@
-    public class Leetcode2352{
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Leetcode2352{
 
     class Solution {
         public int equalPairs(int[][] grid) {
